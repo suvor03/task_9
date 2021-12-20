@@ -8,46 +8,46 @@ import ru.vsu.cs.suvorov_d_a.utils.ArrayUtils;
 public class TestOfProcessedLists {
 
     @Test
-    public void testingListWithoutNegativeNumbers() {
-        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/input1.txt");
+    public void testListWithoutNegativeNumbers() {
+        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/testCaseA.txt");
         List<Integer> actualList = SortPositiveNumbersOfList.process(testingInputList);
-        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/output1.txt");
+        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/testResultA.txt");
 
         Assert.assertEquals(correctOutputList, actualList);
     }
 
     @Test
-    public void testingListWithOnlyNegativeNumbers() {
-        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/input2.txt");
+    public void testListWithOnlyNegativeNumbers() {
+        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/testCaseB.txt");
         List<Integer> actualList = SortPositiveNumbersOfList.process(testingInputList);
-        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/output2.txt");
+        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/testResultB.txt");
 
         Assert.assertEquals(correctOutputList, actualList);
     }
 
     @Test
-    public void testingListWithAlternatingZeroesAndPositiveNumbers() {
-        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/input3.txt");
+    public void testListWithAlternatingZeroesAndPositiveNumbers() {
+        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/testCaseC.txt");
         List<Integer> actualList = SortPositiveNumbersOfList.process(testingInputList);
-        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/output3.txt");
+        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/testResultC.txt");
 
         Assert.assertEquals(correctOutputList, actualList);
     }
 
     @Test
-    public void testingRandomList() {
-        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/input4.txt");
+    public void testRandomList() {
+        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/testCaseD.txt");
         List<Integer> actualList = SortPositiveNumbersOfList.process(testingInputList);
-        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/output4.txt");
+        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/testResultD.txt");
 
         Assert.assertEquals(correctOutputList, actualList);
     }
 
     @Test
-    public void testingListOfThreeNumbers() {
-        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/input5.txt");
+    public void testListOfThreeNumbers() {
+        List<Integer> testingInputList = ArrayUtils.readListFromFile("testSrc/testCaseE.txt");
         List<Integer> actualList = SortPositiveNumbersOfList.process(testingInputList);
-        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/output5.txt");
+        List<Integer> correctOutputList = ArrayUtils.readListFromFile("testSrc/testResultE.txt");
 
         Assert.assertEquals(correctOutputList, actualList);
     }
